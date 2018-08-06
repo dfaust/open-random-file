@@ -1,0 +1,18 @@
+[Desktop Entry]
+Type=Service
+Encoding=UTF-8
+Version=1.0.0
+ServiceTypes=KonqPopupMenu/Plugin,inode/directory
+Actions=OpenRandomFile;OpenRandomFileRecursive;
+
+[Desktop Action OpenRandomFile]
+Name=Open random file
+Name[de]=Zufällige Datei öffnen
+Icon=media-playlist-shuffle
+Exec=open-random-file.sh %F
+
+[Desktop Action OpenRandomFileRecursive]
+Name=Open random file (with subfolders)
+Name[de]=Zufällige Datei öffnen (mit Unterordnern)
+Icon=media-playlist-shuffle
+Exec=open-random-file.sh %F -r
